@@ -1,16 +1,37 @@
 import ccxt
-from pprint import pprint
+from ccxt.base.errors import ExchangeError, ExchangeNotAvailable
 
-poloniex = ccxt.poloniex()
-poloniex.load_markets()
+from pprint import pprint
+import time
+
 
 exchanges = dict()
 
 for ex in ccxt.exchanges:
+    # print(ex)
+    # print('-'*40)
     exchange = getattr(ccxt, ex)
     exchanges[ex] = exchange()
-    exchanges[ex].load_markets()
+    try:
+        exchanges[ex].load_markets()
+    except ExchangeError:
+        continue
+    except ExchangeNotAvailable:
+        continue
 
+    if 'BTC/USD' in exchanges[ex].markets:
+        print(ex, 'BTC/USD')
+        continue
+    elif 'BTC/USDT' in exchanges[ex].markets:
+        print(ex, 'BTC/USDT')
+        continue
 
-for name, ex in exchanges.items():
+    for market in exchanges[ex].markets:
+        print(ex, market)
+        break
+    time.sleep(0.5)
+
+    # print('-'*40)
+    # print('-'*40)
+
 
