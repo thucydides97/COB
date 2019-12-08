@@ -1,0 +1,28 @@
+[
+    {
+        "id": 0,
+        "name": "Jake Bayley",
+        "password": "password",
+        "balance": 100,
+        "investments": [
+            {
+                "name": "The Business Bonds",
+                "ticker": "LQD",
+                "principle": 25,
+                "buy_price": 126.74
+            },
+            {
+                "name": "Apple Inc",
+                "ticker": "AAPL",
+                "principle": 10,
+                "buy_price": 265.76
+            },
+            {
+                "name": "Pepsico Inc",
+                "ticker": "PEP",
+                "principle": 12,
+                "buy_price": 133.81
+            }
+        ]
+    }
+]
