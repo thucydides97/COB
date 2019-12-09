@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getGlobalOB() {
-    return this.http.get("http://127.0.0.1:5555/order_book?ex=GLOBAL")
+    return this.http.get("http://0.0.0.0:5555/order_book?ex=GLOBAL")
   }
 }
