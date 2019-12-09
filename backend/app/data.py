@@ -56,12 +56,11 @@ class OrderBookStore(threading.Thread):
 
     def pull_loop(self):
         while self.is_alive():
-            print('...')
             self.pull_data()
 
 
 if __name__ == '__main__':
-    d = Data()
+    d = OrderBookStore()
     d.start()
 
     for x in range(100):
