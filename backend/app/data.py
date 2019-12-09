@@ -6,7 +6,7 @@ import time
 import threading
 
 
-class Data(threading.Thread):
+class OrderBookStore(threading.Thread):
     def __init__(self, delay=1):
         threading.Thread.__init__(self)
 
