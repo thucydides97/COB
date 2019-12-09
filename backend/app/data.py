@@ -9,7 +9,7 @@ import threading
 class OrderBookStore(threading.Thread):
     def __init__(self, delay=1):
         threading.Thread.__init__(self)
-
+        print("Starting Order Book Store")
         self.exchanges = dict()
         self.data = dict()
         self.delay = delay
