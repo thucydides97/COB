@@ -19,7 +19,7 @@ am4core.useTheme(am4themes_animated);
 })
 export class AppComponent {
   private chart: am4charts.XYChart;
-  private exchanges = ['binance', 'bitfinex', 'poloniex', 'bittrex', 'kraken', 'bitstamp'];
+  private exchanges = ['binance', 'bitfinex', 'poloniex', 'bittrex', 'kraken']//, 'kucoin', 'bitstamp'];
   private charts = {};
 
   constructor(private zone: NgZone) {}
