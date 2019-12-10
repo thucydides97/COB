@@ -36,7 +36,7 @@ export class AppComponent {
 
         // Add data
         this.charts[ex].dataSource.url = "http://209.97.187.180:5555/order_book?ex="+ex+"&s=BTC/USDT";
-        this.charts[ex].dataSource.reloadFrequency = 5000;
+        this.charts[ex].dataSource.reloadFrequency = 30000;
         this.charts[ex].dataSource.adapter.add("parsedData", function(data) {
 
           // Function to process (sort and calculate cummulative volume)
