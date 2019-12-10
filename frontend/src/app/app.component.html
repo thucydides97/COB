@@ -1,8 +1,9 @@
-<div *ngFor="let ex of exchanges" class="chart-grid">
-    <!--<h2 class="ex-title">{{ ex }}</h2>-->
-    <div [id]="'chartdiv_' + ex" class="chart"></div>
+<h1 style="text-align: center;"t>Bitcoin Market Depths</h1>
+<div class="chart-grid">
+    <div  *ngFor="let ex of exchanges" [id]="'chartdiv_' + ex" class="chart"></div>
+  <h3>DigitalOcean Referral: Get $50 over 30 days! <a href="https://m.do.co/c/ebdf945b6fab">Here</a></h3>
+
 </div>
 
-<h3>DigitalOcean Referral: Get $50 over 30 days! <a href="https://m.do.co/c/ebdf945b6fab">Here</a></h3>
 
 <router-outlet></router-outlet>

@@ -3,13 +3,13 @@
 }
 
 .chart-grid {
-  display: inline-grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  //margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .chart-grid .chart {
   height: 400px;
-  width: 600px;
+  width: 500px;
   border: 1px solid;
 }
