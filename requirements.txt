@@ -19,7 +19,7 @@ Jinja2==2.10.3
 Mako==1.1.0
 MarkupSafe==1.1.1
 multidict==4.6.1
-numpy==1.17.4
+numpy==1.22.0
 pandas==0.25.3
 pycares==3.0.0
 pycparser==2.19
